@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quick URL shortening</h1>
+        <p class="description">
+            A URL shortener is a tool that turns long, unwieldy URLs into short, concise ones. These are much easier to dictate, send in instant messages, or use on social media.
+        </p>
+
+        <div class="form-group">
+            <input type="url" id="url-input" placeholder="Paste the long URL here (e.g. https://...)" required>
+            <button id="shorten-btn">Shorten</button>
+        </div>
+        
+        <div id="error-message" class="error-text hidden"></div>
+
+        <div id="result-area" class="hidden">
+            <p>Your short URL is ready:</p>
+            <div class="result-box">
+                <a href="#" id="short-link" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
