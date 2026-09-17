@@ -29,8 +29,8 @@ A simple, fast URL shortener with link validation and visit counter.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/alexmods40-dev/URL-shortenr.git
-   cd URL-shortenr
+   git clone https://github.com/alexmods40-dev/URL-shortener.git
+   cd URL-shortener
    ```
 
 2. Install dependencies:
