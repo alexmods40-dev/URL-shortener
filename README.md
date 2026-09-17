@@ -2,20 +2,57 @@
 
 A simple, fast URL shortener with link validation and visit counter.
 
-## Tech Stack
-- **Frontend:** HTML5, CSS3 (Flexbox, Animations), Vanilla JS (ES6+)
-- **Backend:** Node.js, Express, TypeScript
-- **Database & Tools:** PostgreSQL, Prisma ORM, Zod, Nanoid
-
 ## Features
+
 - URL validation via Zod
 - Short code generation with Nanoid
-- Redirect & click tracking (visits count)
+- Redirect & click tracking (visit count)
 - Responsive UI with loader and error handling
 
-## Quick Start
-1. Clone repo: `git clone <your-link>`
-2. Install dependencies: `npm install`
-3. Setup `.env` with your `DATABASE_URL`
-4. Run migrations: `npx prisma db push`
-5. Start server: `npm run dev`
+## Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Frontend | HTML5, CSS3 (Flexbox, Animations), Vanilla JS (ES6+) |
+| Backend | Node.js, Express, TypeScript |
+| Database & Tools | PostgreSQL, Prisma ORM, Zod, Nanoid |
+
+## Setup and Run
+
+### Prerequisites
+
+- Node.js and npm installed
+- PostgreSQL database
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Configure environment variables. Create a `.env` file in the root directory:
+
+   ```env
+   DATABASE_URL="postgresql://user:password@localhost:5432/url_shortener_db?schema=public"
+   ```
+
+4. Run database migrations:
+
+   ```bash
+   npx prisma db push
+   ```
+
+5. Start the server:
+
+   ```bash
+   npm run dev
+   ```
